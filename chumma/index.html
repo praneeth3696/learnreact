@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAFT PUNK EXPERIENCE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mouse-glow"></div>
+<div class="background-pulse"></div>
+
+<header class="hero">
+    <div class="mask-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Daft_Punk_-_Alive_2007.jpg" class="mask">
+    </div>
+    <h1>DAFT PUNK</h1>
+    <p>Analog Dreams • Digital Souls</p>
+</header>
+
+<section class="albums">
+    <div class="album-card" data-album="ram">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg">
+        <h3>Random Access Memories</h3>
+    </div>
+
+    <div class="album-card" data-album="discovery">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Daft_Punk_-_Discovery.jpg">
+        <h3>Discovery</h3>
+    </div>
+
+    <div class="album-card" data-album="homework">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Daftpunk-homework.jpg">
+        <h3>Homework</h3>
+    </div>
+</section>
+
+<div class="album-modal" id="albumModal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+            <img id="modalCover">
+            <div>
+                <h2 id="modalTitle"></h2>
+                <p id="modalYear"></p>
+            </div>
+        </div>
+
+        <ul id="trackList"></ul>
+
+        <div class="equalizer" id="equalizer">
+            <div></div><div></div><div></div><div></div><div></div>
+        </div>
+
+        <p id="totalDuration"></p>
+    </div>
+</div>
+
+<audio id="audioPlayer"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
