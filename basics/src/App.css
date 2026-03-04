@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css – Styles for Notes App */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #040404;
+  color: #1a1a2e;
+}
+
+.app {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* ── Form ── */
+.form {
+  background: rgb(17, 255, 0);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
-.card {
-  padding: 2em;
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
 }
 
-.read-the-docs {
-  color: #888;
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* ── Buttons ── */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background: #4a90e2;
+  color: white;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #357abd;
+}
+
+.cancel-btn {
+  background: #999;
+}
+
+.cancel-btn:hover {
+  background: #777;
+}
+
+.delete-btn {
+  background: #e74c3c;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+/* ── Notes List ── */
+.notes-list h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+
+.note-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  margin-bottom: 16px;
+}
+
+.note-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #1a1a2e;
+}
+
+.note-card p {
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.note-buttons {
+  display: flex;
+  gap: 10px;
 }
